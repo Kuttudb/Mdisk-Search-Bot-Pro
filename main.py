@@ -132,7 +132,7 @@ async def message_handler(event):
             title=event.text,
             author=Config.BOT_USERNAME
         )
-        message = f'**😮‍💨 Tired of slow download speeds?\n Try using our new downloading method click the below link and download via direct link. Experience high speed downloading without any limits ⚡\n \n Click Here 👇 For "{event.text}"**\n\n[🍿🎬 {str(event.text).upper()}\n🍿🎬 {str("Click me for results").upper()}]({tgraph_result})'
+        message = f'**😮‍💨 Tired of slow download speeds? \n Try using our new downloading method click the below link and download via direct link. Experience high speed downloading without any limits ⚡\n\n Click Here 👇 For "{event.text}"**\n\n[🍿🎬 {str(event.text).upper()}\n🍿🎬 {str("Click me for results").upper()}]({tgraph_result})'
 
         await txt.delete()
         result = await event.reply(message, link_preview=False)
